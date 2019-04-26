@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD666E52-3969-4F73-BEFE-1CF52CA49DCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DemoExTkani</RootNamespace>
+    <AssemblyName>DemoExTkani</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DemoExDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoExDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Furnitura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Furnitura.Designer.cs">
+      <DependentUpon>Furnitura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FurnituraIzd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FurnituraIzd.Designer.cs">
+      <DependentUpon>FurnituraIzd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izdelia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izdelia.Designer.cs">
+      <DependentUpon>Izdelia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log.Designer.cs">
+      <DependentUpon>Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reg.Designer.cs">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkladFurnitura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkladFurnitura.Designer.cs">
+      <DependentUpon>SkladFurnitura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkladTkani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkladTkani.Designer.cs">
+      <DependentUpon>SkladTkani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tkani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tkani.Designer.cs">
+      <DependentUpon>Tkani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TkaniIzd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TkaniIzd.Designer.cs">
+      <DependentUpon>TkaniIzd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakaz.Designer.cs">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZakazIzd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZakazIzd.Designer.cs">
+      <DependentUpon>ZakazIzd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Furnitura.resx">
+      <DependentUpon>Furnitura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FurnituraIzd.resx">
+      <DependentUpon>FurnituraIzd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izdelia.resx">
+      <DependentUpon>Izdelia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log.resx">
+      <DependentUpon>Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reg.resx">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkladFurnitura.resx">
+      <DependentUpon>SkladFurnitura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkladTkani.resx">
+      <DependentUpon>SkladTkani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tkani.resx">
+      <DependentUpon>Tkani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TkaniIzd.resx">
+      <DependentUpon>TkaniIzd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakaz.resx">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZakazIzd.resx">
+      <DependentUpon>ZakazIzd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DemoExDataSet1.xsc">
+      <DependentUpon>DemoExDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DemoExDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoExDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoExDataSet1.xss">
+      <DependentUpon>DemoExDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
